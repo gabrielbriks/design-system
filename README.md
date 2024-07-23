@@ -49,3 +49,12 @@ package.json
   ```ts
   import { colors } from "@morais-ui/tokens";
   ```
+
+## Sempre utilizar unidade de medidas relativas na web
+
+- É muito importante sempre utilizamos unidades de medidas relativas(`rem`), pois pixels(`px`) são unidades absolutas e não podem ser alteradas dce acordo com as preferências do usuário.
+  - Unico momento que iremos utilizar a unidade `px` será no momento que precisarmos garantir que valor permaneça absoluto. Como por exemplo no BorderRadius
+
+- Nesse caso podemos utilizar como padrão da web que cada `1rem` equivale a `16px`
+
+
