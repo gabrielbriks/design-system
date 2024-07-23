@@ -1,5 +1,5 @@
 {
-  "name": "@morais-ui/tokens",
+  "name": "@morais-ui/react",
   "version": "1.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@morais-ui/tokens": "*",
     "tsup": "^8.2.2",
     "typescript": "^5.5.4"
   }
