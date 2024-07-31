@@ -1,3 +1,3 @@
-import { colors } from "@morais-ui/tokens";
+import { colors } from '@morais-ui/tokens';
 
-console.log("React OK", colors);
+console.log('React OK', colors);

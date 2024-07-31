@@ -6,13 +6,15 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
-    "dev": "tsup src/index.ts --format esm,cjs --dts --watch"
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "lint": "eslint src/**/*.ts* --fix "
   },
   "author": "Gabriel Morais",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "@morais-ui/ts-config": "*",
+    "@morais-ui/eslint-config": "*",
     "@morais-ui/tokens": "*",
     "tsup": "^8.2.2",
     "typescript": "^5.5.4"

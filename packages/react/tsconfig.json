@@ -2,5 +2,8 @@
   "extends": "@morais-ui/ts-config/react.json",
   "include": [
     "src"
-  ]
+  ],
+  "compilerOptions": {
+    "jsx": "react"
+  }
 }

@@ -1,0 +1,3 @@
+{
+  "extends": "@morais-ui/eslint-config"
+}
