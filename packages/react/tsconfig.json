@@ -1,0 +1,6 @@
+{
+  "extends": "@morais-ui/ts-config/react.json",
+  "include": [
+    "src"
+  ]
+}
