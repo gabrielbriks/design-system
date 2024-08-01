@@ -1,6 +1,12 @@
-import { colors } from "@morais-ui/tokens";
 import * as React from "react";
+import { styled } from "./styles";
+
+const Button = styled("button", {
+  fontFamily: "$default",
+  backgroundColor: "$morais500",
+  borderRadius: "$md",
+});
 
 export function App() {
-  return <h1 style={{ color: colors.morais300 }}>Hello World</h1>;
+  return <Button>Hello World</Button>;
 }
