@@ -5,9 +5,9 @@ Projeto para aprendizado prático de Design System
 ## Aprendizados
 
 * \[x] Conceito e utilização de design system
-* \[ ] Conceito e utilização do Storybook
-* \[ ] Conceito e utilização de monorepos
-* \[ ] Utilização dos Stitches para construção de componentes react
+* \[ ] Conceito e utilização prática do Storybook
+* \[ ] Conceito e utilização prática de monorepos
+* \[ ] Utilização prática do Stitches para construção de componentes react
 
 ## Components
 
