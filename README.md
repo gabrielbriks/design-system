@@ -2,6 +2,13 @@
 
 Projeto para aprendizado prático de Design System
 
+## Aprendizados
+
+* \[x] Conceito e utilização de design system
+* \[ ] Conceito e utilização do Storybook
+* \[ ] Conceito e utilização de monorepos
+* \[ ] Utilização dos Stitches para construção de componentes react
+
 ## Components
 
 * \[ ] Text
@@ -22,14 +29,20 @@ Projeto para aprendizado prático de Design System
 
 packages:
   | tokens
-    | package.json
+    | *Destinado a armazenar todos os tokens globais do design system*
   | react
-    | package.json
+    | *Diretorio destinado a construção dos componentes react*
+  | docs
+    | *Diretorio destinado a implementação do storybook*
+  | eslint-config
+    | *Utilizado para centralizar as configurações do eslint para todos os pacotes*
+  | ts-config
+    | *Utilizado para concentrara as configurações do typescript para todos os pacotes*
 ```
 
 ### Pacote Tokens
 
-* Temos a seguinte estrutura:
+* Inicialmente temos a seguinte estrutura:
 
 ```plain
 tokens
@@ -83,16 +96,6 @@ package.json
 * Permite trabalhar em vários projetos dentro da mesma estrutura e ao mesmo tempo
 * Não é necessário publicar os projetos no NPM para fazer alterações entre eles
 
-#### Algumas características e vantagens importantes:
+### Configuração
 
-* **Reúso de código**: Funcionalidades semelhantes ou protocolos de comunicação podem ser abstraídos em bibliotecas compartilhadas e incluídos diretamente por projetos, sem a necessidade de um gerenciador de pacotes de dependência.
-
-* **Gerenciamento simplificado** de dependências: Em ambientes com vários repositórios, onde vários projetos dependem de uma mesma biblioteca, essa dependência pode ser baixada ou construída várias vezes. Em um monorepo, a compilação pode ser otimizada, pois as dependências referenciadas existem no mesmo código-fonte.
-
-* **Commits atômicos**: Quando projetos que trabalham juntos estão em repositórios separados, as versões precisam ser sincronizadas para garantir que funcionem bem juntos. Em projetos grandes, gerenciar versões compatíveis entre dependências pode se tornar complicado. Em um monorepo, esse problema pode ser evitado, pois os desenvolvedores podem alterar vários projetos de forma atômica.
-
-* **Refatoração em grande escala**: Como os desenvolvedores têm acesso ao projeto inteiro, refatorações podem garantir que cada parte do projeto continue funcionando após a alteração.
-
-* **Colaboração entre equipes**: Em um monorepo que usa dependências de código-fonte, equipes podem melhorar projetos em que outras equipes estão trabalhando, o que leva a uma propriedade de código flexível.
-
-* *No entanto, existem algumas desvantagens, como a perda de informações de versão específicas para cada projeto e a falta de controle de acesso específico para cada projeto. Mesmo assim, muitas empresas, como Google, Meta, Microsoft, Uber, Airbnb e Twitter, usam monorepos com sucesso para gerenciar grandes volumes de código e mudanças diárias*
+* Inicialemnte será implementado o uso das workspaces do `npm` seguindo a estrutura utilizada no **`turboRepo`** para que ele seja implementado no futuro.
